@@ -1,13 +1,11 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
 apply plugin: 'java'
 apply plugin: 'application'
 
 mainClassName = 'ohtu.Main'
-
-// https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc
-//
-
-// https://mvnrepository.com/artifact/com.google.code.gson/gson
-//
 
 repositories {
     mavenCentral()
