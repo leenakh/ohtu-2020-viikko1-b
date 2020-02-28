@@ -10,3 +10,11 @@
 /Verkkokauppa1/build/
 /Verkkokauppa1/.gradle/
 /Verkkokauppa1/*.tmp
+/nhlreader/.nb-gradle/
+/nhlreader/build/
+/nhlreader/.gradle/
+/nhlreader/*.tmp
+/HelloCucumber/.nb-gradle/
+/HelloCucumber/build/
+/HelloCucumber/.gradle/
+/HelloCucumber/*.tmp
