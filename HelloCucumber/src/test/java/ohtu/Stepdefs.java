@@ -27,6 +27,18 @@ public class Stepdefs {
     @When("it is incremented by {int}")
     public void itIsIncrementedBy(Integer val) {
          counter.increment(val);       
-    }    
+    }
+    
+    @When("it is reset")
+    public void itIsReset() {
+        counter.reset();
+        //throw new cucumber.api.PendingException();
+    }
+    
+    @Given("Counter is intialized")
+    public void counterIsIntialized() {
+        counter = new Counter();
+        //throw new cucumber.api.PendingException();
+    }
 
 }
