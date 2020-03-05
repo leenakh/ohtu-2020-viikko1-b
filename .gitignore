@@ -18,3 +18,7 @@
 /HelloCucumber/build/
 /HelloCucumber/.gradle/
 /HelloCucumber/*.tmp
+/LoginCucumber/.nb-gradle/
+/LoginCucumber/.gradle/
+/LoginCucumber/build/
+/LoginCucumber/*.tmp/
