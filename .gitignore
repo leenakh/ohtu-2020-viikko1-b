@@ -22,3 +22,7 @@
 /LoginCucumber/.gradle/
 /LoginCucumber/build/
 /LoginCucumber/*.tmp/
+/WebLogin/.nb-gradle/
+/WebLogin/.gradle/
+/WebLogin/build/
+/WebLogin/*.tmp/
