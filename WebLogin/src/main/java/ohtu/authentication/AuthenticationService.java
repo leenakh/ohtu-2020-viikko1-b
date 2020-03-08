@@ -33,12 +33,33 @@ public class AuthenticationService {
         if (username.length()<3 ) {
             status.addError("username should have at least 3 characters");
         }
+        
+        if (password.length() < 8) {
+            status.addError("password should have at least 8 characters");
+        }
+        
+        if (containsOnlyLetters(password)) {
+            status.addError("password should not consist of letters only");
+        }
+        
+        if (!password.equals(passwordConfirmation)) {
+            status.addError("password and password confirmation do not match");
+        }
 
         if (status.isOk()) {
             userDao.add(new User(username, password));
         }
         
         return status;
+    }
+    
+    private boolean containsOnlyLetters(String merkkijono) {
+        for (int i = 0; i < merkkijono.length(); i++) {
+            if (!Character.isLetter(merkkijono.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
